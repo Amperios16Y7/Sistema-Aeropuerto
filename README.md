@@ -4,7 +4,7 @@
 
 **Equipo 9 – Proyecto de Programación Java**
 
-👥 Integrantes:
+**👥 Integrantes:**
 
 * Jarquín Rivera Orlando Miguel – Desarrollador principal e interfaz
 
@@ -85,19 +85,19 @@ Uso de calendario para seleccionar fecha del vuelo.
 
 **🛠️ Pasos para ejecutar el sistema**
 
-Clonar este repositorio.
+1. Clonar este repositorio.
 
-Abrir el proyecto en NetBeans 12+.
+2. Abrir el proyecto en NetBeans 12+.
 
-Asegurarse de tener Java JDK 11 o superior instalado.
+3. Asegurarse de tener Java JDK 11 o superior instalado.
 
-Agregar las librerías externas (.jar) al proyecto.
+4. Agregar las librerías externas (.jar) al proyecto.
 
-Configurar tu base de datos MySQL con el script aeropuerto_db.sql.
+5. Configurar tu base de datos MySQL con el script aero_db.sql.
 
-Cambiar credenciales de acceso a base de datos en la clase Conexion.java.
+6. Cambiar credenciales de acceso a base de datos en la clase Conexion.java.
 
-Ejecutar el archivo Main.java.
+7. Ejecutar el archivo Main.java.
 
 **✅ Requisitos mínimos**
 
