@@ -2,7 +2,7 @@
 
 **✈️ Sistema de Punto de Venta – Skywell Airlines**
 
-Equipo 9 – Proyecto de Programación Java
+**Equipo 9 – Proyecto de Programación Java**
 
 👥 Integrantes:
 
@@ -12,16 +12,20 @@ Equipo 9 – Proyecto de Programación Java
 
 
 **🛫 ¿Qué hace el sistema?**
+
 Skywell Airlines es un sistema de venta de boletos de avión, que permite gestionar vuelos, pasajeros, aeropuertos y empleados. El sistema valida usuarios al iniciar sesión, permite registrar nuevos pasajeros y realiza la venta de boletos generando un PDF y enviándolo por correo.
 
 **💻 Tipo de sistema**
+
 Aplicación de escritorio (Desktop App) desarrollada en Java con Swing como interfaz gráfica, y conectada a una base de datos MySQL.
 
 **🔌 Librería externa implementada**
+
 Se utilizó la librería "Validación de correos y contraseñas" del Equipo 16 para validar los campos del formulario de registro.
 🔗 
 
 **🧩 Componente visual integrado**
+
 No se utilizó un componente visual externo de otro equipo. Sin embargo, implementamos tablas dinámicas personalizadas para mostrar y modificar datos como usuarios, vuelos y aeropuertos usando JTable y JScrollPane.
 
 # 🚀 Funcionalidades Clave
