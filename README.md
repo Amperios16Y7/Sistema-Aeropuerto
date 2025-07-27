@@ -30,6 +30,12 @@ No se utilizó un componente visual externo de otro equipo. Sin embargo, impleme
 
 # 🚀 Funcionalidades Clave
 
+**✅ Integración de CAPTCHA**
+
+Se implementó el componente CAPTCHA del Equipo 2 en el formulario de inicio de sesión.
+Su función es evitar accesos automatizados: el usuario debe introducir correctamente el texto del CAPTCHA generado antes de iniciar sesión.
+El componente fue adaptado para mostrar una imagen con letras aleatorias y validar la entrada manual antes de verificar el usuario y contraseña.
+
 **🔐 Integración de validación**
 
 Validación de correo y contraseña en el registro de usuarios mediante la librería del Equipo 16.
