@@ -15,9 +15,15 @@
 
 Skywell Airlines es un sistema de venta de boletos de avión, que permite gestionar vuelos, pasajeros, aeropuertos y empleados. El sistema valida usuarios al iniciar sesión, permite registrar nuevos pasajeros y realiza la venta de boletos generando un PDF y enviándolo por correo.
 
+<img width="1199" height="402" alt="image" src="https://github.com/user-attachments/assets/8ef6237b-7ecf-4780-a9dd-664cb0376ef2" />
+
+
 **💻 Tipo de sistema**
 
 Aplicación de escritorio (Desktop App) desarrollada en Java con Swing como interfaz gráfica, y conectada a una base de datos MySQL.
+
+<img width="565" height="324" alt="image" src="https://github.com/user-attachments/assets/2ca6d62a-6426-48c6-aff5-6c88c269df6a" />
+
 
 **🔌 Librería externa implementada**
 
@@ -28,6 +34,9 @@ Se utilizó la librería "Validación de correos y contraseñas" del Equipo 16 p
 
 No se utilizó un componente visual externo de otro equipo. Sin embargo, implementamos tablas dinámicas personalizadas para mostrar y modificar datos como usuarios, vuelos y aeropuertos usando JTable y JScrollPane.
 
+<img width="738" height="236" alt="image" src="https://github.com/user-attachments/assets/4f8a7af1-31ad-4154-8b96-af0757f69304" />
+
+
 # 🚀 Funcionalidades Clave
 
 **✅ Integración de CAPTCHA**
@@ -35,6 +44,9 @@ No se utilizó un componente visual externo de otro equipo. Sin embargo, impleme
 Se implementó el componente CAPTCHA del Equipo 2 en el formulario de inicio de sesión.
 Su función es evitar accesos automatizados: el usuario debe introducir correctamente el texto del CAPTCHA generado antes de iniciar sesión.
 El componente fue adaptado para mostrar una imagen con letras aleatorias y validar la entrada manual antes de verificar el usuario y contraseña.
+
+<img width="573" height="356" alt="image" src="https://github.com/user-attachments/assets/f5d4f079-d876-413c-b0e0-137a80ac0fc9" />
+
 
 **🔐 Integración de validación**
 
@@ -46,7 +58,7 @@ Alta, baja, modificación y consulta de usuarios desde una interfaz sencilla.
 
 **🛬 CRUD de Vuelos, Aeropuertos y Empleados**
 
-Administración completa de registros relacionados con los vuelos.
+Administración completa de registros relacionados con los vuelos, aeropuertos y empleados.
 
 **🎫 Proceso principal: Venta de boletos de avión**
 
