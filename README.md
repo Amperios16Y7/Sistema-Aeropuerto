@@ -52,17 +52,49 @@ El componente fue adaptado para mostrar una imagen con letras aleatorias y valid
 
 Validación de correo y contraseña en el registro de usuarios mediante la librería del Equipo 16.
 
+**Implementaciòn en el boton registrar:**
+
+<img width="1698" height="1360" alt="image" src="https://github.com/user-attachments/assets/bd548a86-5a70-4978-89ce-6e8ea8edc028" />
+
+**Validar correo:**
+
+<img width="1358" height="1068" alt="image" src="https://github.com/user-attachments/assets/8c0a4d90-91da-4324-b11f-4a2ccc35b422" />
+
+**Validar contraseña:**
+
+<img width="658" height="1072" alt="image" src="https://github.com/user-attachments/assets/62478db0-fc57-4982-a027-65e7fc898be8" />
+
+
 **👤 CRUD de Usuarios**
 
 Alta, baja, modificación y consulta de usuarios desde una interfaz sencilla.
+
+<img width="1920" height="654" alt="image" src="https://github.com/user-attachments/assets/cf9fa971-d6b7-445b-b6a5-c97b376ff5f9" />
+
 
 **🛬 CRUD de Vuelos, Aeropuertos y Empleados**
 
 Administración completa de registros relacionados con los vuelos, aeropuertos y empleados.
 
+**Vuelos:**
+<img width="1908" height="646" alt="image" src="https://github.com/user-attachments/assets/d5ddba00-1a76-4507-b44d-16a04b436e77" />
+
+**Aeropuertos:**
+<img width="2004" height="658" alt="image" src="https://github.com/user-attachments/assets/9fec80fa-389f-4c0f-bb96-31638e3561db" />
+
+**Pasajeros:**
+<img width="1910" height="644" alt="image" src="https://github.com/user-attachments/assets/0d08e6c3-9ba2-4912-8137-8fcdfc450771" />
+
+**Empleados:**
+<img width="1912" height="648" alt="image" src="https://github.com/user-attachments/assets/8ef81585-4afd-49ec-b44d-cb9967973928" />
+
+
 **🎫 Proceso principal: Venta de boletos de avión**
 
 El usuario selecciona un vuelo disponible, registra al pasajero y genera automáticamente un boleto con número de asiento, vuelo y fecha.
+
+<img width="2400" height="920" alt="image" src="https://github.com/user-attachments/assets/4d5aedfb-13b9-421c-af39-a4ecc56ca403" />
+
 
 **📧 Envío de correo electrónico con PDF adjunto**
 
@@ -71,6 +103,8 @@ Se genera un boleto en formato PDF con los datos del vuelo y pasajero usando PDF
 <img width="362" height="432" alt="image" src="https://github.com/user-attachments/assets/5a84f21b-502c-4304-be11-33b59198faf1" />
 
 El archivo se adjunta automáticamente y se envía al correo del pasajero mediante Jakarta Mail y Activation API.
+
+<img width="2866" height="840" alt="image" src="https://github.com/user-attachments/assets/bbad76c8-8e34-4fdb-8c70-6da813929519" />
 
 Se realizaron ajustes al diseño del PDF y mensajes de correo.
 
