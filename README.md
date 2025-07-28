@@ -28,7 +28,7 @@ Aplicación de escritorio (Desktop App) desarrollada en Java con Swing como inte
 **🔌 Librería externa implementada**
 
 Se utilizó la librería "Validación de correos y contraseñas" del Equipo 16 para validar los campos del formulario de registro.
-🔗 
+🔗 https://github.com/YHUDIEL/Login-con-validaciones
 
 **🧩 Componente visual integrado**
 
@@ -67,6 +67,8 @@ El usuario selecciona un vuelo disponible, registra al pasajero y genera automá
 **📧 Envío de correo electrónico con PDF adjunto**
 
 Se genera un boleto en formato PDF con los datos del vuelo y pasajero usando PDFBox.
+
+<img width="362" height="432" alt="image" src="https://github.com/user-attachments/assets/5a84f21b-502c-4304-be11-33b59198faf1" />
 
 El archivo se adjunta automáticamente y se envía al correo del pasajero mediante Jakarta Mail y Activation API.
 
@@ -121,5 +123,5 @@ NetBeans: 12 o superior
 
 Conexión a internet (para envío de correos)
 
-¡Gracias por revisar nuestro proyecto!
-Skywell Airlines – Porque volar también es una experiencia digital. 🛫🌐
+**¡Gracias por revisar nuestro proyecto!
+Skywell Airlines – Porque volar también es una experiencia digital. 🛫🌐**
