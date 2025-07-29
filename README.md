@@ -132,7 +132,7 @@ Uso de calendario para seleccionar fecha del vuelo.
 | `jcalendar`           | Selección de fechas               |
 | `absolute-layout.jar` | Posicionamiento de componentes    |
 | `jgoodies looks`      | Mejorar apariencia de interfaz    |
-| `Equipo 16 Validator` | Validación de correo y contraseña |
+| `proyectoTopicos.jar` | Validación de correo y contraseña |
 
 
 **🛠️ Pasos para ejecutar el sistema**
