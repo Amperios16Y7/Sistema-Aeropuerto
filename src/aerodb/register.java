@@ -12,6 +12,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import libreriasql.LibreriaSQL;
+import ProyectoTap.ValidadorTexto;
 
 public class register extends javax.swing.JFrame {
     
@@ -234,48 +235,48 @@ public class register extends javax.swing.JFrame {
     }//GEN-LAST:event_txtApellidoActionPerformed
 
     private void btnRegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistroMouseClicked
-        String[] usuario = new String[5];
+       String[] usuario = new String[5];
         usuario[0] = txtNombre.getText();
         usuario[1] = txtApellido.getText();
         usuario[2] = txtCorreo.getText();
-        boolean repetido = false;
-        ArrayList<String[]> correos = (ArrayList<String[]>) LibreriaSQL.getData("usuarios", "correo", null);
-        for(String[] datos : correos){
-            if(datos[0].equals(txtCorreo.getText())){
-                repetido = true;
-            }
-        }       
         usuario[3] = txtPassword.getText();
         usuario[4] = "Invitado";
-        
-        if(!repetido){
-            boolean camposLlenos = true;
-            for (String dato : usuario) {
-                if (dato.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Ingrese todos los campos");
-                    camposLlenos = false;
-                    return;
-                }
-            }
-            boolean cor = usuario[2].contains("@gmail.com");
-            if (camposLlenos && cor){
-                LibreriaSQL.insertarRegistro("usuarios", usuario);
-                GeneradorPDFregistro.generaRegistro(usuario[0],usuario[1],usuario[2]);
-                String path = System.getProperty("user.dir") + "/" + usuario[0] + usuario[1] + "Registro.pdf";
-                String destinatario = txtCorreo.getText();
-                String asunto = "Bienvenido!!!";
-                String cuerpo = "";
-                EnviarCorreo.enviarConAdjunto(destinatario, asunto, cuerpo, path);
-                new InicioSesion().setVisible(true);
-                dispose();
-            }
-            else{
-                JOptionPane.showMessageDialog(null, "Por favor ingrese un correo con la terminacion @gmail.com", "Advertencia", JOptionPane.WARNING_MESSAGE);
+
+        // Verificar que todos los campos estén llenos
+        for (String dato : usuario) {
+            if (dato.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Ingrese todos los campos", "Advertencia", JOptionPane.WARNING_MESSAGE);
+                return;
             }
         }
-        else{
-            lblError.setText("El correo electronico ya se ha usado para otro usuario");
+        // Validar correo
+        if (!ValidadorTexto.esCorreoValido(usuario[2])) {
+            JOptionPane.showMessageDialog(null, "El correo debe ser válido y terminar en @gmail.com o @hotmail.com", "Correo no válido", JOptionPane.WARNING_MESSAGE);
+            return;
         }
+        // Validar contraseña
+        if (!ValidadorTexto.esContrasenaSegura(usuario[3])) {
+            JOptionPane.showMessageDialog(null, """
+                    La contraseña debe cumplir con los siguientes requisitos:
+                    - Al menos 8 caracteres
+                    - Al menos una letra mayúscula
+                    - Al menos un número
+                    - Al menos un carácter especial (!@#$%^&*()-_=+)
+                    - No debe contener espacios
+                    """, "Contraseña no segura", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        // Registrar usuario si pasa todas las validaciones
+        LibreriaSQL.insertarRegistro("usuarios", usuario);
+        GeneradorPDFregistro.generaRegistro(usuario[0], usuario[1], usuario[2]);
+
+        String path = System.getProperty("user.dir") + "/" + usuario[0] + usuario[1] + "Registro.pdf";
+        String destinatario = usuario[2];
+        String asunto = "Bienvenido!!!";
+        String cuerpo = "";
+        EnviarCorreo.enviarConAdjunto(destinatario, asunto, cuerpo, path);
+        new InicioSesion().setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnRegistroMouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
