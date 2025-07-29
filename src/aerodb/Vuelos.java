@@ -397,6 +397,10 @@ public class Vuelos extends javax.swing.JFrame {
 
     private void btnComprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnComprarMouseClicked
         int filaSeleccionada = tabla.getSelectedRow();
+        // Validación: No se ha seleccionado ninguna fila
+        if (filaSeleccionada == -1) {
+        JOptionPane.showMessageDialog(null, "Por favor, seleccione un vuelo para proceder", "Advertencia", JOptionPane.WARNING_MESSAGE);
+        return;
         ArrayList<String[]> seleccionado = null;
         Object valorPrimeraColumna = tabla.getValueAt(filaSeleccionada, 0);
         String valor = valorPrimeraColumna.toString();
@@ -405,7 +409,7 @@ public class Vuelos extends javax.swing.JFrame {
         if(vuelo[5].equals("Programado") && !vuelo[9].equals("0")){
             if (filaSeleccionada != -1){
                 
-                
+               
                 String[] headers = LibreriaSQL.obtenerNombresColumnas("pasajeros");
                 String[] columnasSinId = new String[(headers.length - 1)];
                 for (int i = 1; i < headers.length; i++) {
