@@ -73,6 +73,8 @@ Validación de correo y contraseña en el registro de usuarios mediante la libre
 
 Alta, baja, modificación y consulta de usuarios desde una interfaz sencilla.
 
+Los roles que definimos para este sistema son : **Administrador, Empleado, Invitado y Supervisor.**
+
 <img width="1920" height="654" alt="image" src="https://github.com/user-attachments/assets/cf9fa971-d6b7-445b-b6a5-c97b376ff5f9" />
 
 
