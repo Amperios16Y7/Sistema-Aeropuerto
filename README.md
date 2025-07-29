@@ -95,7 +95,7 @@ Administración completa de registros relacionados con los vuelos, aeropuertos, 
 
 **🎫 Proceso principal: Venta de boletos de avión**
 
-El usuario selecciona un vuelo disponible, registra al pasajero y genera automáticamente un boleto con número de asiento, vuelo y fecha.
+El usuario selecciona un vuelo disponible, registra al pasajero y genera automáticamente un boleto con número de vuelo y fecha.
 
 <img width="2400" height="920" alt="image" src="https://github.com/user-attachments/assets/4d5aedfb-13b9-421c-af39-a4ecc56ca403" />
 
