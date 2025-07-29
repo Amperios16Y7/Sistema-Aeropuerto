@@ -242,6 +242,21 @@ public class register extends javax.swing.JFrame {
         usuario[3] = txtPassword.getText();
         usuario[4] = "Invitado";
 
+        // Verificar si ya existe el correo
+        boolean repetido = false;
+        ArrayList<String[]> correos = (ArrayList<String[]>) LibreriaSQL.getData("usuarios", "correo", null);
+        for (String[] datos : correos) {
+            if (datos[0].equalsIgnoreCase(usuario[2])) {
+                repetido = true;
+                break;
+            }
+        }
+
+        if (repetido) {
+            lblError.setText("El correo electrónico ya se ha usado para otro usuario");
+            return;
+        }
+        
         // Verificar que todos los campos estén llenos
         for (String dato : usuario) {
             if (dato.isEmpty()) {
