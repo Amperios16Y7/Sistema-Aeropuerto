@@ -54,7 +54,9 @@ Validación de correo y contraseña en el registro de usuarios mediante la libre
 
 **Implementaciòn en el boton registrar:**
 
-<img width="1698" height="1360" alt="image" src="https://github.com/user-attachments/assets/bd548a86-5a70-4978-89ce-6e8ea8edc028" />
+<img width="990" height="557" alt="image" src="https://github.com/user-attachments/assets/e04e341f-c18b-4a7c-9043-78346be7d52d" />
+
+<img width="819" height="213" alt="image" src="https://github.com/user-attachments/assets/60326e59-29cf-4d6a-96e7-3a93843550d3" />
 
 **Validar correo:**
 
@@ -72,9 +74,9 @@ Alta, baja, modificación y consulta de usuarios desde una interfaz sencilla.
 <img width="1920" height="654" alt="image" src="https://github.com/user-attachments/assets/cf9fa971-d6b7-445b-b6a5-c97b376ff5f9" />
 
 
-**🛬 CRUD de Vuelos, Aeropuertos y Empleados**
+**🛬 CRUD de Vuelos, Aeropuertos, Pasajeros y Empleados**
 
-Administración completa de registros relacionados con los vuelos, aeropuertos y empleados.
+Administración completa de registros relacionados con los vuelos, aeropuertos, pasajeros y empleados.
 
 **Vuelos:**
 <img width="1908" height="646" alt="image" src="https://github.com/user-attachments/assets/d5ddba00-1a76-4507-b44d-16a04b436e77" />
